@@ -16,7 +16,7 @@ TypeScriptを利用する上で、 `any` （動的型付けとして振る舞う
 ## [基本編](https://nocture1.github.io/typescript/基本編)
 - 型安全な条件分岐の基本パターンを理解する。
 
-## 初歩編
+## [初歩編](https://nocture1.github.io/typescript/初心編)
 - 基本編では対応できない複雑なパターンに対応する。
 - 今まで定義してきた型を再利用する。
 
