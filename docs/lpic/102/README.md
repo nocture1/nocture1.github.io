@@ -93,3 +93,37 @@ staff:x:1002:lpic, linux
 |-s パス|shell|
 |-m|make home directory<br>`/etc/skel` の内容をコピーし配置する|
 
+## cron
+定期的にジョブを実行する。  
+デーモン `crond` とスケジューリングを編集する `crontab` から構成
+
+ユーザーごとのcrontabは `/var/spool/cron` ディレクトリに配置。  
+システムのcrontabは `/etc/cron.*` ディレクトリのファイルを参照。
+
+### crontabの書式
+```
+分 時 日 月 曜日 コマンド
+```
+※曜日：0,7が日曜
+
+複数の時間帯で実行： `9,12`  
+～毎に実行： `*/2`
+
+## at
+1回限りの実行スケジュールを扱う
+
+```bash
+$ at [-f ファイル名] 日時
+```
+
+### atの実行書式
+
+|指定日時|書式|
+|:--|:--|
+|午後10時|22:00, 10pm|
+|正午|noon|
+|真夜中|midnight|
+|今日|today|
+|明日|tomorrow|
+|3日後|now + 3 days|
+|2週間後の午後10時|10pm + 2 weeks|
