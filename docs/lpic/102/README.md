@@ -30,6 +30,10 @@ $ declare -f
 $ unset 関数名
 ```
 
+## 設定ファイルの実行順序
+
+![image](https://github.com/user-attachments/assets/9a40b1a4-aaaa-4596-bbcf-a3267c798520)
+
 ## シェルスクリプト
 
 ```bash
@@ -127,3 +131,39 @@ $ at [-f ファイル名] 日時
 |明日|tomorrow|
 |3日後|now + 3 days|
 |2週間後の午後10時|10pm + 2 weeks|
+
+## cronのアクセス制御
+1. `/etc/cron.allow` があれば、ここに記述されたユーザーだけが `cron` を利用できる
+2. `/etc/cron.deny` がなければ、 `/etc/cron.deny` に書いていないユーザーが `cron` を利用できる
+
+## atのアクセス制御
+1. `/etc/at.allow` があれば、ここに記述されたユーザーのみが `at` を利用できる
+2. `/etc/at.allow` がなければ、 `/etc/at.deny` に書いていないユーザーが `at` を利用できる
+3. どちらもなければ `root だけが `at` を利用できる
+
+## iconv
+文字コードを変換する
+
+```bash
+$ iconv [オプション] [入力ファイル名]
+```
+
+|オプション|役割|
+|:--|:--|
+|-f 文字コード|from<br>変換前の文字コード|
+|-t 文字コード|to<br>変換後の文字コード|
+|-l|扱える文字コードを表示
+
+## タイムゾーン
+`/usr/share/zoneinfo` ディレクトリ以下で管理
+
+システムで利用するタイムゾーンは↑を `/etc/localtime` にコピーする  
+環境変数 `TZ` でも設定可能
+
+```bash
+$ export TZ="Asia/Tokyo"
+```
+
+値を全ユーザーで利用する場合 `/etc/timezone` に "Asia/Tokyo" を設定しておく  
+`tzselect` コマンドで一覧から選択してタイムゾーンの設定値を確認できる
+
