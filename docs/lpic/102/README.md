@@ -167,3 +167,52 @@ $ export TZ="Asia/Tokyo"
 値を全ユーザーで利用する場合 `/etc/timezone` に "Asia/Tokyo" を設定しておく  
 `tzselect` コマンドで一覧から選択してタイムゾーンの設定値を確認できる
 
+## クロック
+- ハードウェアクロック
+    + ハードウェアとして内蔵された時計
+    + コンピュータ内に内蔵した電池で動き続ける
+- システムクロック
+    + Linuxのカーネル内に存在する時計
+
+```bash
+# システムクロックを参照して現在の日時を表示
+$ date
+```
+
+|書式|役割|
+|:--|:--|
+|%Y|year|
+|%m|month|
+|%d|date|
+|%H|hour|
+|%M|minute|
+|%a|day|
+|%b|month name|
+
+```bash
+# ハードウェアクロックの参照・設定
+$ hwclock
+```
+
+```bash
+# systemdディストリビューションの時刻・タイムゾーン管理
+$ timedatectl
+```
+
+## NTP
+> 正確な時刻はネットワーク経由でクロックを同期するNTPを利用
+
+```bash
+$ ntpdate NTPサーバ名
+```
+
+## NTPサーバの運用
+
+```bash
+# /etc/init.d/ntpd start
+
+# systemd
+# systemctl start ntpd.service
+```
+
+ NTPサーバは `/etc/ntp.conf` で管理している
