@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+html,
+body,
+#md-title,
+#md-menu,
+#md-all,
+#md-content,
+#md-content :not(i):not(pre):not(code):not(var):not(samp):not(tt):not(kbd) {
+    font-family:
+    'ヒラギノ角ゴ Pro W3',
+    'Hiragino Kaku Gothic Pro',
+    'メイリオ',
+    'Meiryo',
+    '游ゴシック',
+    'Yu Gothic',
+    'ＭＳ Ｐゴシック',
+    'MS PGothic',
+    sans-serif;
+}
+
+#md-content pre,
+#md-content code,
+#md-content var,
+#md-content samp,
+#md-content tt,
+#md-content kbd {
+    font-family:
+    'Source Han Code JP',
+    'Myrica M',
+    'MyricaM M',
+    'Migu 1M',
+    'Migu 2M',
+    'VL ゴシック',
+    'Roboto Mono',
+}
+
+#md-page-menu p,
+#md-page-menu a,
+#md-page-menu a:link,
+#md-page-menu a:active,
+#md-page-menu a:visited {
+    color: #000;
+}
+
+#md-title-container.container .page-header {
+    margin: 0 -50px;
+    padding: 55px 50px 50px;
+    background: #666 url(./img/background.png) no-repeat center center;
+    background-size: cover;
+}
+
+#md-title h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#md-content p,
+#md-content *:not(i) {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+#md-content h1,
+#md-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+#md-content h3,
+#md-content h4,
+#md-content h5,
+#md-content h6 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+#md-content li,
+#md-content li *,
+#md-content dd,
+#md-content dd * {
+    line-height: 1.4;
+}
+
+#md-content pre {
+    border: 1px solid #ddd;
+    padding: 0;
+    background-color: #FEFFF2;
+}
+
+#md-content code {
+    color: #000;
+    background-color: #FEFFF2;
+    border: 1px solid #ddd;
+}
+
+#md-content pre > code {
+    color: #000;
+    margin: 10px 10px 5px 10px;
+    background-color: #FEFFF2;
+    border: none;
+}
+
+#md-content pre > code {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#md-content li pre {
+    padding: 0;
+    margin: 0.5em 0;
+}
+
+#md-content li pre > code {
+    text-indent: 0;
+}
