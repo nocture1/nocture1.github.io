@@ -119,3 +119,31 @@ body,
 #md-content li pre > code {
     text-indent: 0;
 }
+
+@media only screen and (min-width: 1441px) {
+    #md-title-container.container .page-header {
+        margin: 0 -350px;
+        padding: 55px 350px 50px;
+    }
+}
+
+@media only screen and (min-width: 1841px) {
+    #md-title-container.container .page-header {
+        margin:0 -550px;
+        padding:55px 550px 50px;
+    }
+}
+
+@media only screen and (min-width: 2241px) {
+    #md-title-container.container .page-header {
+        margin:0 -750px;
+        padding: 55px 750px 50px;
+    }
+}
+
+@media only screen and (min-width: 2641px) {
+    #md-title-container.container .page-header {
+        margin:0 -1150px;
+        padding:55px 1150px 50px;
+    }
+}
