@@ -4,7 +4,7 @@
 
 [トピック]()
 
-* [01. TypeScript学習メモ](./TypeScript/typescript1.md)
-* [02. SQL学習メモ](./SQL/sql1.md)
+* [01. TypeScript学習メモ](typescript1.md)
+* [02. SQL学習メモ](sql1.md)
 
 [gimmick:theme](cosmo)
