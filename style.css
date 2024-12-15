@@ -35,12 +35,38 @@ body,
     'Roboto Mono',
 }
 
+#md-all {
+    overflow-x: hidden;
+}
+
+#md-menu a.navbar-brand {
+    font-size: 15px!important;
+}
+
+#md-menu ul.nav.navbar-nav > *:not(li) {
+    display:none;
+}
+
+#md-menu a.navbar-brand {
+    max-width:80%;
+}
+
 #md-page-menu p,
 #md-page-menu a,
 #md-page-menu a:link,
 #md-page-menu a:active,
 #md-page-menu a:visited {
     color: #000;
+}
+
+body {
+    overflow-x:hidden;
+}
+
+#md-title-container.container {
+    margin-top: -10px;
+    margin-bottom:40px;
+    background-color:#fff;
 }
 
 #md-title-container.container .page-header {
@@ -56,6 +82,15 @@ body,
     font-size: 20px;
     font-weight: bold;
     color: #fff;
+}
+
+#md-left-column #md-page-menu {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+#md-all hr {
+    border-top: 1px solid #ddd;
 }
 
 #md-content p,
@@ -104,9 +139,6 @@ body,
     margin: 10px 10px 5px 10px;
     background-color: #FEFFF2;
     border: none;
-}
-
-#md-content pre > code {
     font-size: 14px;
     line-height: 1.6;
 }
@@ -118,6 +150,276 @@ body,
 
 #md-content li pre > code {
     text-indent: 0;
+}
+
+#md-content *:not(i) {
+    margin: 2rem 0;
+}
+
+#md-content li,
+#md-content dd {
+    margin: 2rem 0;
+}
+
+#md-content a,
+#md-content br,
+#md-content hr,
+#md-content span,
+#md-content div,
+#md-content div.md-text {
+    margin: 0; padding: 0;
+}
+
+#md-content pre {
+    margin: 0.5rem 0;
+    padding: 0;
+}
+
+#md-content *+h1,
+#md-content *+h2 {
+    margin-top: 110px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#md-content *+h3 {
+    margin-top:80px;
+}
+
+#md-content *+h4,
+#md-content *+h5,
+#md-content *+h6 {
+    margin-top:40px;
+}
+
+#md-content blockquote {
+    padding: 1rem 1rem 1rem 3.5rem;
+    background-color: aliceblue;
+    border: 1px solid lavender;
+}
+
+#md-content blockquote {
+    position: relative;
+}
+
+#md-content blockquote::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10d";
+    font-size: 2.5rem;
+    line-height: 1;
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    font-weight: bold;
+    color: lavender;
+}
+
+#md-content blockquote code {
+    background-color: #fff;
+}
+
+#md-content li blockquote::after {
+    left: 30px;
+}
+
+#md-content div.MathJax_Display {
+    padding: 1rem 1rem 1rem 1rem;
+    background-color:#fcfcfc;
+    border:1px solid #ddd;
+}
+
+#md-content dt {
+    border-top: 1px solid #ddd;
+    background-color: #fcfcfc;
+}
+
+#md-content dl {
+    border-bottom: 1px solid #ddd;
+}
+
+#md-content ol {
+    list-style: none;
+    padding-left: 3.5rem;
+    text-indent: 
+    -3.3rem;
+    counter-reset: li;
+}
+
+#md-content ol > li::before {
+    display: inline-block; 
+    width: 3.3rem;
+    text-align: right; 
+    padding-right: 0.2rem; 
+    color: #bbb; 
+    font-weight: bold; 
+    counter-increment: li; 
+    content: counter(li) ". ";
+}
+
+#md-content ul {
+    list-style: none;
+    padding-left: 3.5rem;
+    text-indent: -2.5rem;
+}
+
+#md-content ul > li::before{
+    display: inline-block; 
+    width: 2.5rem; text-align:right; 
+    padding-right: 1rem; 
+    font-weight: 900; 
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f111"; 
+    font-size: 0.5em; 
+    vertical-align: middle; 
+    color: #bbb;
+}
+
+#md-content ul li>p {
+    padding: 0;
+    margin: 0;
+}
+
+#md-content li p,
+#md-content li p > div.md-text {
+    display: inline;
+    padding: 0;
+    text-indent:0;
+}
+
+#md-content li > blockquote>p{padding-left:1.5em;}
+
+#md-content li > ol,
+#md-content li > ul,
+#md-content li > dl {
+    padding-left: 3rem;
+    border-left: 1px dashed #bbb;
+}
+
+#md-content li li > ol,
+#md-content li li > ul,
+#md-content li li > dl{padding-left:3rem; border-left:0px dashed #bbb;}
+
+#md-content li ol > li::before {
+    font-weight: normal;
+    content: counter(li) ") ";
+    color: #bbb;
+}
+
+#md-content li ul > li::before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    content: "\f068";
+    font-size: 0.6em;
+    vertical-align: middle;
+    color: #bbb;
+}
+
+#md-content li li ol > li::before {
+    font-weight: normal;
+    content: counter(li) ": ";
+    color: #bbb;
+}
+
+#md-content li li ul > li::before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    content: "\f068";
+    font-size: 0.5em;
+    vertical-align: middle;
+    color: #ccc;
+}
+
+#md-content h4::before {
+    display: inline-block;
+    width: 2rem;
+    margin-right: 0.2rem;
+    font-size: 0.8em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f009";
+    text-align: left;
+    color: #999;
+}
+
+#md-content h5::before {
+    display: inline-block;
+    width: 2rem;
+    margin-right: 0.2rem;
+    font-size: 0.8em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f02b";
+    text-align: left;
+    color :#ccc;
+}
+
+#md-content h6::before {
+    display: inline-block;
+    width:2rem;
+    margin-right: 0.2rem;
+    font-size:0.8em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f02c";
+    text-align: right;
+    color: #d8d8d8;
+}
+
+#md-content h5,
+#md-content h6 {
+    color:#777;
+}
+
+#md-content span.anchor-highlight,
+#md-content span.anchor-highlight a {
+    font-size: 12px;
+    line-height: 1.0;
+}
+
+#md-content a.visible-xs.visible-sm.jumplink+h3 {
+    margin-top: 45px;
+}
+
+#md-content .table-bordered {border:0px solid #ddd;border-bottom:1px solid #ddd;}
+#md-content .table-bordered > thead > tr > th {
+    background-color: #fcfcfc;
+}
+
+#md-content .table-bordered > thead > tr > th,
+#md-content .table-bordered > tbody > tr > th,
+#md-content .table-bordered > tfoot > tr > th,
+#md-content .table-bordered > thead > tr > td,
+#md-content .table-bordered > tbody > tr > td,
+#md-content .table-bordered > tfoot > tr > td {
+    border: 0px solid #ddd;
+    border-top:1px solid #ddd;
+}
+
+#md-content .table thead > tr > th {
+    border-bottom: 0px solid #ddd;
+    background-color: #fcfcfc;
+}
+
+#md-content a.visible-xs.visible-sm.jumplink::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f139";
+    color: #ddd;
+    font-size: 20px;
+}
+
+#md-content a.visible-xs.visible-sm.jumplink {
+    font-size: 6px;
+    text-align: right;
+    color: #fff;
+    margin-top: -53px;
+    margin-bottom: 0px;
+}
+
+#md-content a.visible-xs.visible-sm.jumplink+h3 {
+    margin-top: 83px;
 }
 
 @media only screen and (min-width: 1441px) {
