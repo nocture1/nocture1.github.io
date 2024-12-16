@@ -25,14 +25,14 @@ body,
 #md-content samp,
 #md-content tt,
 #md-content kbd {
-    font-family:
+    /* font-family:
     'Source Han Code JP',
     'Myrica M',
     'MyricaM M',
     'Migu 1M',
     'Migu 2M',
     'VL ゴシック',
-    'Roboto Mono',
+    'Roboto Mono', */
 }
 
 #md-all {
@@ -123,9 +123,9 @@ body {
 }
 
 #md-content pre {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd;
     padding: 0;
-    background-color: #FEFFF2;
+    background-color: #FEFFF2; */
 }
 
 #md-content code {
@@ -135,12 +135,12 @@ body {
 }
 
 #md-content pre > code {
-    color: #000;
+    /* color: #000;
     margin: 10px 10px 5px 10px;
     background-color: #FEFFF2;
     border: none;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.6; */
 }
 
 #md-content li pre {
@@ -149,7 +149,7 @@ body {
 }
 
 #md-content li pre > code {
-    text-indent: 0;
+    /* text-indent: 0; */
 }
 
 #md-content *:not(i) {
