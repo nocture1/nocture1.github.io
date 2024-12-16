@@ -11,7 +11,7 @@
 
 以下は電話をかけるシンプルなコードです。
 
-```ts
+```typescript
 /**
  * `validTeleophoneNumber` を事前に呼んでください。
  */
