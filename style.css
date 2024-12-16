@@ -24,7 +24,8 @@ body,
 #md-content var,
 #md-content samp,
 #md-content tt,
-#md-content kbd {
+#md-content kbd,
+#md-content code > .token {
     font-family:
     "Consolas", 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace,
 }
