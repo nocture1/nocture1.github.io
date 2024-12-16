@@ -129,9 +129,9 @@ body {
 }
 
 #md-content code {
-    color: #000;
+    /* color: #000;
     background-color: #FEFFF2;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; */
 }
 
 #md-content pre > code {
@@ -217,7 +217,7 @@ body {
 }
 
 #md-content blockquote code {
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 #md-content li blockquote::after {
