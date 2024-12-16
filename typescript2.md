@@ -89,7 +89,7 @@ Primitive Obsessionが起きうる場面と対策する機能を紹介します�
 
 #### 1. 値の候補が有限個の場合 → ユニオン型を使う
 データがとる値の種類が有限個の場合、ユニオン型を利用することで対策できます。  
-実行環境をお持ちの方は、 `number` に変えて `1 | 2 | 3 | 4` を書き換え、  
+実行環境をお持ちの方は、 `number` に変えて `1 | 2 | 3 | 4` に書き換え、  
 最後の `else` ブランチの変数を確認してみましょう。
 
 ```ts
@@ -116,7 +116,7 @@ function show(n: number) {
 ```ts
 type User = ...
 
-// Omit<User, 'id'> 型Userから id プロパティを除外した型を
+// Omit<User, 'id'>： 型Userから id プロパティを除外した型
 function post(user: Omit<User, 'id'>) {}
 ```
 
