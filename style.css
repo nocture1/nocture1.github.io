@@ -19,6 +19,16 @@ body,
     sans-serif;
 }
 
+#md-content pre,
+#md-content code,
+#md-content var,
+#md-content samp,
+#md-content tt,
+#md-content kbd {
+    font-family:
+    "Consolas", 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace,
+}
+
 #md-all {
     overflow-x: hidden;
 }
