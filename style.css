@@ -19,22 +19,6 @@ body,
     sans-serif;
 }
 
-#md-content pre,
-#md-content code,
-#md-content var,
-#md-content samp,
-#md-content tt,
-#md-content kbd {
-    font-family:
-    'Source Han Code JP',
-    'Myrica M',
-    'MyricaM M',
-    'Migu 1M',
-    'Migu 2M',
-    'VL ゴシック',
-    'Roboto Mono',
-}
-
 #md-all {
     overflow-x: hidden;
 }
